@@ -81,13 +81,22 @@
 
 .btn-orange {
   color: white !important;
-  background-color: #f65801 !important;
-  border: 2px solid #f65801 !important;
+  background-color: #f4600c !important;
+  border: 2px solid #f4600c !important;
+  font-size: 1.2rem;
+  padding: 0.75rem 2rem;
+  border-radius: 0.6rem;
+  transition: all 0.3s ease;
+  min-width: 160px;
+  width: auto;
 }
 
-.btn-orange:hover {
-  background-color: #f65801;
-  border-color: #f65801;
+@media (max-width: 600px) {
+  .btn-orange {
+    font-size: 0.95rem;
+    padding: 0.5rem 1.4rem;
+    min-width: 100px;
+  }
 }
 
 *,
@@ -6037,19 +6046,30 @@ textarea.form-control-lg {
   transform: translate(-50%, -50%);
   color: white;
   text-align: center;
-  z-index: 1;
-  font-size: 4vw;
-  margin-top: 150px;
+  z-index: 10;
+  width: 100%;
+  padding: 1rem;
 }
 
 .content h1 {
   font-size: 6vw;
   margin-bottom: 20px;
+  font-weight: 700;
 }
 
-.content p {
-  font-size: 3vm;
+@media (max-width: 768px) {
+  .content h1 {
+    font-size: 7vw;
+  }
 }
+
+@media (max-width: 576px) {
+  .content h1 {
+    font-size: 8vw;
+    line-height: 1.2;
+  }
+}
+
 
 .spinner-grow,
 .spinner-border {
