@@ -17,7 +17,15 @@
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
     </head>
-    <body class="d-flex flex-column h-100">
+    <body class="loading" class="d-flex flex-column h-100">
+<!-- Loader de 6 pelotitas -->
+  <div id="loader">
+    <div class="dots-loader">
+      <span></span><span></span><span></span><span></span><span></span>
+      <span>
+    </div>
+  </div>
+
             <!-- Navigation-->
             <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
                 <div class="container px-5">
@@ -187,5 +195,21 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
+        <!--Bootstrap Loader JS-->
+      <script>
+         window.addEventListener('load', function () {
+        setTimeout(function () {
+        // Oculta el loader suavemente
+        const loader = document.getElementById('loader');
+        const contenido = document.getElementById('contenido');
+        document.body.classList.remove('loading');
+        loader.classList.add('hidden'); // aplica fade out
+        // Muestra el contenido después de que el fade out del loader termina (1s)
+        setTimeout(() => {
+        contenido.classList.add('visible'); // aplica fade in
+        }, 1000); // 1000ms = duración del fade out del loader
+      }, 10000); // espera 10 segundos antes de ocultar el loader
+    });
+  </script>
     </body>
 </html>
