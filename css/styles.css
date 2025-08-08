@@ -5363,7 +5363,7 @@ textarea.form-control-lg {
 
 .modal {
   --bs-modal-zindex: 1055;
-  --bs-modal-width: 500px;
+  --bs-modal-width: 90vw;
   --bs-modal-padding: 1rem;
   --bs-modal-margin: 0.5rem;
   --bs-modal-color: ;
@@ -5383,6 +5383,7 @@ textarea.form-control-lg {
   --bs-modal-footer-bg: ;
   --bs-modal-footer-border-color: var(--bs-border-color);
   --bs-modal-footer-border-width: 1px;
+  padding: 1rem;
   position: fixed;
   top: 0;
   left: 0;
@@ -5398,9 +5399,16 @@ textarea.form-control-lg {
 .modal-dialog {
   position: relative;
   width: auto;
-  margin: var(--bs-modal-margin);
+  margin: 1rem auto;
   pointer-events: none;
 }
+
+.modal-dialog.custom-size {
+  width: 90vw;         /* Usa 90% del ancho de la pantalla */
+  max-width: 800px;    /* No crece más allá de esto en pantallas grandes */
+  margin: auto;        /* Centrado horizontalmente */
+}
+
 .modal.fade .modal-dialog {
   transition: transform 0.3s ease-out;
   transform: translate(0, -50px);
@@ -5451,7 +5459,7 @@ textarea.form-control-lg {
 .modal-backdrop {
   --bs-backdrop-zindex: 1050;
   --bs-backdrop-bg: #000;
-  --bs-backdrop-opacity: 0.5;
+  --bs-backdrop-opacity: 0.85;
   position: fixed;
   top: 0;
   left: 0;
@@ -6164,7 +6172,6 @@ textarea.form-control-lg {
     line-height: 1.2;
   }
 }
-
 
 .spinner-grow,
 .spinner-border {

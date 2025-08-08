@@ -1,609 +1,1000 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <title>DGC Electricidad</title>
-        <!-- Favicon-->
-        <link rel="icon" type="image/x-icon" href="./assets/images/icon.png" />
-        <!-- Custom Google font-->
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100;200;300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet" />
-        <!-- Bootstrap icons-->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet" />
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="css/styles.css" rel="stylesheet" />
-    </head>
-    <body class="loading" class="d-flex flex-column h-100">
-<!-- Loader de 6 pelotitas -->
-  <div id="loader">
-    <div class="dots-loader">
-      <span></span><span></span><span></span><span></span><span></span>
-      <span>
-    </div>
-  </div>
-
-            <!-- Navigation-->
-            <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
-                <div class="container px-5">
-                    <a class="navbar-brand" href="index.html"><span class="fw-bolder text-primary"><img src="./assets/images/logo.png" alt="Logo DGC Electricidad" style="height: 50px;"></span></a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 small fw-bolder">
-                            <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
-                            <li class="nav-item"><a class="nav-link" href="us.html">Nosotros</a></li>
-                            <li class="nav-item"><a class="nav-link" href="service.html">Servicios</a></li>
-                            <li class="nav-item"><a class="nav-link disabled" aria-disabled="true">Proyectos</a></li>
-                            <li class="nav-item"><a class="nav-link" href="contact.html">Contacto</a></li>
-                            <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
-                            <li class="nav-item"><a class="nav-link" href="https://dgcelectricidad.cl:2083/">Ingresar</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-            <!-- Projects Section-->
-            <section class="py-5">
-                <div class="container px-5 mb-5">
-                    <div class="text-center mb-5">
-                        <h1 class="display-5 fw-bolder mb-0"><span class="text-gradient d-inline">Proyectos</span></h1>
-                    </div>
-                    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-  <div class="nav-project container-fluid">
-      <form class="d-flex" role="search">
-        <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search"/>
-        <button class="btn btn-outline-success" type="submit">Buscar</button>
-      </form>
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0 fw-bolder">
-        <li class="nav-item">
-          <a class="nav-link" href="#">Ver todos</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Recientes</a>
-        </li>
-      </ul>
-  </div>
-</nav>
-        <!--Proyectos-->
-        <div class="container mt-4">
-  <div class="row">
-    <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
-      <div class="card">
-        <img src="..." class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Card1</h5>
-          <p class="card-text">Text for card 1.</p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
-        </div>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>DGC Electricidad</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="./assets/images/icon.png" />
+    <!-- Custom Google font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap icons-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
+  </head>
+  <body class="loading d-flex flex-column h-100">
+    <!-- Loader de 6 pelotitas -->
+    <div id="loader">
+      <div class="dots-loader">
+        <span></span><span></span><span></span><span></span><span></span>
       </div>
     </div>
 
-    <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
-      <div class="card">
-        <img src="..." class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Card 2</h5>
-          <p class="card-text">Text for card 2.</p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
+      <div class="container px-5">
+        <a class="navbar-brand" href="index.html"
+          ><span class="fw-bolder text-primary"
+            ><img
+              src="./assets/images/logo.png"
+              alt="Logo DGC Electricidad"
+              style="height: 50px" /></span
+        ></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 small fw-bolder">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="us.html">Nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="service.html">Servicios</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" aria-disabled="true">Proyectos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contacto</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="blog.html">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://dgcelectricidad.cl:2083/"
+                >Ingresar</a
+              >
+            </li>
+          </ul>
         </div>
       </div>
-    </div>
+    </nav>
 
-    <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
-  <div class="card">
-    <img src="..." class="card-img-top" alt="...">
-    <div class="card-body">
-      <h5 class="card-title">Card3</h5>
-      <p class="card-text">Text for card 3.</p>
-      <a href="#" class="btn btn-primary">Go somewhere</a>
-    </div>
-  </div>
-</div>
+    <!-- Projects Section -->
+    <section class="py-5">
+      <div class="container px-5 mb-5">
+        <div class="text-center mb-5">
+          <h1 class="display-5 fw-bolder mb-0">
+            <span class="text-gradient d-inline">Proyectos</span>
+          </h1>
+        </div>
 
-<div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
-  <div class="card">
-    <img src="..." class="card-img-top" alt="...">
-    <div class="card-body">
-      <h5 class="card-title">Card4</h5>
-      <p class="card-text">Text for card 4.</p>
-      <a href="#" class="btn btn-primary">Go somewhere</a>
-    </div>
-  </div>
-</div>
-
-<div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
-  <div class="card">
-    <img src="..." class="card-img-top" alt="...">
-    <div class="card-body">
-      <h5 class="card-title">Card5</h5>
-      <p class="card-text">Text for card 5.</p>
-      <a href="#" class="btn btn-primary">Go somewhere</a>
-    </div>
-  </div>
-</div>
-
-<div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
-  <div class="card">
-    <img src="..." class="card-img-top" alt="...">
-    <div class="card-body">
-      <h5 class="card-title">Card6</h5>
-      <p class="card-text">Text for card 6.</p>
-      <a href="#" class="btn btn-primary">Go somewhere</a>
-    </div>
-  </div>
-</div>
-
-<div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
-  <div class="card">
-    <img src="..." class="card-img-top" alt="...">
-    <div class="card-body">
-      <h5 class="card-title">Card7</h5>
-      <p class="card-text">Text for card 7.</p>
-      <a href="#" class="btn btn-primary">Go somewhere</a>
-    </div>
-  </div>
-</div>
-
-<div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
-  <div class="card">
-    <img src="..." class="card-img-top" alt="...">
-    <div class="card-body">
-      <h5 class="card-title">Card8</h5>
-      <p class="card-text">Text for card 8.</p>
-      <a href="#" class="btn btn-primary">Go somewhere</a>
-    </div>
-  </div>
-</div>
-
-<div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
-  <div class="card">
-    <img src="..." class="card-img-top" alt="...">
-    <div class="card-body">
-      <h5 class="card-title">Card9</h5>
-      <p class="card-text">Text for card 9.</p>
-      <a href="#" class="btn btn-primary">Go somewhere</a>
-    </div>
-  </div>
-</div>
-
-<div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
-  <div class="card">
-    <img src="..." class="card-img-top" alt="...">
-    <div class="card-body">
-      <h5 class="card-title">Card10</h5>
-      <p class="card-text">Text for card 10.</p>
-      <a href="#" class="btn btn-primary">Go somewhere</a>
-    </div>
-  </div>
-</div>
-
-<div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
-  <div class="card">
-    <img src="..." class="card-img-top" alt="...">
-    <div class="card-body">
-      <h5 class="card-title">Card11</h5>
-      <p class="card-text">Text for card 11.</p>
-      <a href="#" class="btn btn-primary">Go somewhere</a>
-    </div>
-  </div>
-</div>
-
-<div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
-  <div class="card">
-    <img src="..." class="card-img-top" alt="...">
-    <div class="card-body">
-      <h5 class="card-title">Card12</h5>
-      <p class="card-text">Text for card 12.</p>
-      <a href="#" class="btn btn-primary">Go somewhere</a>
-    </div>
-  </div>
-</div>
-
-<div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
-  <div class="card">
-    <img src="..." class="card-img-top" alt="...">
-    <div class="card-body">
-      <h5 class="card-title">Card13</h5>
-      <p class="card-text">Text for card 13.</p>
-      <a href="#" class="btn btn-primary">Go somewhere</a>
-    </div>
-  </div>
-</div>
-
-<div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
-  <div class="card">
-    <img src="..." class="card-img-top" alt="...">
-    <div class="card-body">
-      <h5 class="card-title">Card14</h5>
-      <p class="card-text">Text for card 14.</p>
-      <a href="#" class="btn btn-primary">Go somewhere</a>
-    </div>
-  </div>
-</div>
-
-<div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
-  <div class="card">
-    <img src="..." class="card-img-top" alt="...">
-    <div class="card-body">
-      <h5 class="card-title">Card15</h5>
-      <p class="card-text">Text for card 15.</p>
-      <a href="#" class="btn btn-primary">Go somewhere</a>
-    </div>
-  </div>
-</div>
-
-<div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
-  <div class="card">
-    <img src="..." class="card-img-top" alt="...">
-    <div class="card-body">
-      <h5 class="card-title">Card16</h5>
-      <p class="card-text">Text for card 16.</p>
-      <a href="#" class="btn btn-primary">Go somewhere</a>
-    </div>
-  </div>
-</div>
-
-<div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
-  <div class="card">
-    <img src="..." class="card-img-top" alt="...">
-    <div class="card-body">
-      <h5 class="card-title">Card17</h5>
-      <p class="card-text">Text for card 17.</p>
-      <a href="#" class="btn btn-primary">Go somewhere</a>
-    </div>
-  </div>
-</div>
-
-<div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
-  <div class="card">
-    <img src="..." class="card-img-top" alt="...">
-    <div class="card-body">
-      <h5 class="card-title">Card18</h5>
-      <p class="card-text">Text for card 18.</p>
-      <a href="#" class="btn btn-primary">Go somewhere</a>
-    </div>
-  </div>
-</div>
-
-<div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
-  <div class="card">
-    <img src="..." class="card-img-top" alt="...">
-    <div class="card-body">
-      <h5 class="card-title">Card19</h5>
-      <p class="card-text">Text for card 19.</p>
-      <a href="#" class="btn btn-primary">Go somewhere</a>
-    </div>
-  </div>
-</div>
-
-<div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
-  <div class="card">
-    <img src="..." class="card-img-top" alt="...">
-    <div class="card-body">
-      <h5 class="card-title">Card20</h5>
-      <p class="card-text">Text for card 20.</p>
-      <a href="#" class="btn btn-primary">Go somewhere</a>
-    </div>
-  </div>
-</div>
-
-<div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
-  <div class="card">
-    <img src="..." class="card-img-top" alt="...">
-    <div class="card-body">
-      <h5 class="card-title">Card21</h5>
-      <p class="card-text">Text for card 21.</p>
-      <a href="#" class="btn btn-primary">Go somewhere</a>
-    </div>
-  </div>
-</div>
-
-<div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
-  <div class="card">
-    <img src="..." class="card-img-top" alt="...">
-    <div class="card-body">
-      <h5 class="card-title">Card22</h5>
-      <p class="card-text">Text for card 22.</p>
-      <a href="#" class="btn btn-primary">Go somewhere</a>
-    </div>
-  </div>
-</div>
-
-<div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
-  <div class="card">
-    <img src="..." class="card-img-top" alt="...">
-    <div class="card-body">
-      <h5 class="card-title">Card23</h5>
-      <p class="card-text">Text for card 23.</p>
-      <a href="#" class="btn btn-primary">Go somewhere</a>
-    </div>
-  </div>
-</div>
-
-<div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
-  <div class="card">
-    <img src="..." class="card-img-top" alt="...">
-    <div class="card-body">
-      <h5 class="card-title">Card24</h5>
-      <p class="card-text">Text for card 24.</p>
-      <a href="#" class="btn btn-primary">Go somewhere</a>
-    </div>
-  </div>
-</div>
-
-<div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
-  <div class="card">
-    <img src="..." class="card-img-top" alt="...">
-    <div class="card-body">
-      <h5 class="card-title">Card25</h5>
-      <p class="card-text">Text for card 25.</p>
-      <a href="#" class="btn btn-primary">Go somewhere</a>
-    </div>
-  </div>
-</div>
-
-<div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
-  <div class="card">
-    <img src="..." class="card-img-top" alt="...">
-    <div class="card-body">
-      <h5 class="card-title">Card26</h5>
-      <p class="card-text">Text for card 26.</p>
-      <a href="#" class="btn btn-primary">Go somewhere</a>
-    </div>
-  </div>
-</div>
-
-<div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
-  <div class="card">
-    <img src="..." class="card-img-top" alt="...">
-    <div class="card-body">
-      <h5 class="card-title">Card27</h5>
-      <p class="card-text">Text for card 27.</p>
-      <a href="#" class="btn btn-primary">Go somewhere</a>
-    </div>
-  </div>
-</div>
-
-<div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
-  <div class="card">
-    <img src="..." class="card-img-top" alt="...">
-    <div class="card-body">
-      <h5 class="card-title">Card28</h5>
-      <p class="card-text">Text for card 28.</p>
-      <a href="#" class="btn btn-primary">Go somewhere</a>
-    </div>
-  </div>
-</div>
-
-<div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
-  <div class="card">
-    <img src="..." class="card-img-top" alt="...">
-    <div class="card-body">
-      <h5 class="card-title">Card29</h5>
-      <p class="card-text">Text for card 29.</p>
-      <a href="#" class="btn btn-primary">Go somewhere</a>
-    </div>
-  </div>
-</div>
-
-<div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
-  <div class="card">
-    <img src="..." class="card-img-top" alt="...">
-    <div class="card-body">
-      <h5 class="card-title">Card30</h5>
-      <p class="card-text">Text for card 30.</p>
-      <a href="#" class="btn btn-primary">Go somewhere</a>
-    </div>
-  </div>
-</div>
-
-
-    <!-- Repite más tarjetas si quieres -->
-  </div>
-
-  <!-- Paginación -->
-  <nav aria-label="Page navigation example">
-    <ul class="pagination  justify-content-center" id="pagination">
-      <!-- Se generarán dinámicamente -->
-    </ul>
-  </nav>
-</div>
-
-  </div>
-</div>
-
-
-
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!-- Call to action section-->
-            <section class="py-5 bg-gradient-primary-to-secondary text-white">
-                <div class="container px-5 my-5">
-                    <div class="text-center">
-                        <h2 class="display-4 fw-bolder mb-4">¡Colaboremos Juntos!</h2>
-                        <a class="btn btn-outline-light btn-lg px-5 py-3 fs-6 fw-bolder" href="contact.html">Contáctanos</a>
-                    </div>
-                </div>
-            </section>
-        </main>
-       <!-- Footer-->
-        <footer class="bg-white py-4 mt-auto">
-            <div class="container">
-          <div class="row">
-            <div class="col-12 col-md-6 text-start">
-              <h4>Ubicación</h4>
-              <p>##### </p>
-              <p>########## </p>
-              <h4>Contactos</h4>
-              <p>Email </p>
-              <p>Teléfono </p>
-            </div>
-
-            <div class="col-12 col-md-6 text-md-end mt-4 mt-md-0">
-              <ol class="list-unstyled">
-                <h4>Enlaces</h4>
-                <li>
-                  <a
-                    href="index.html"
-                    target="_blank"
-                    class="text-dark text-decoration-none"
-                    >Inicio</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="us.html"
-                    target="_blank"
-                    class="text-dark text-decoration-none"
-                    >Nosotros</a
-                  >
-                </li>
-                <li>
-                  <a href="service.html" class="text-dark text-decoration-none"
-                    >Servicios</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="projects.html"
-                    target="_blank"
-                    class="text-dark text-decoration-none"
-                    >Proyectos</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="contact.html"
-                    target="_blank"
-                    class="text-dark text-decoration-none"
-                    >Contacto</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="blog.html"
-                    target="_blank"
-                    class="text-dark text-decoration-none"
-                    >Blog</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="https://dgcelectricidad.cl:2083/"
-                    target="_blank"
-                    class="text-dark text-decoration-none"
-                    >Ingresar</a
-                  >
-                </li>
-              </ol>
-            </div>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+          <div class="nav-project container-fluid">
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Buscar"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-success" type="submit">
+                Buscar
+              </button>
+            </form>
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 fw-bolder">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Ver todos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Recientes</a>
+              </li>
+            </ul>
           </div>
-            <div class="container px-5">
-                <div class="row align-items-center justify-content-between flex-column flex-sm-row">
-                    <div class="col-auto"><div class="small m-0">Copyright &copy; DGC Electrica 2025</div></div>
-                    <div class="col-auto">
-                        <a class="small" href="#!">Privacidad</a>
-                        <span class="mx-1">&middot;</span>
-                        <a class="small" href="#!">Términos</a>
-                        <span class="mx-1">&middot;</span>
-                        <a class="small" href="./contact.html">Contacto</a>
+        </nav>
+
+        <!-- Proyectos -->
+        <div class="container mt-4">
+          <div class="row">
+            <!-- Card 1 -->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+              <div class="card">
+                <img
+                  src="./assets/images/Parque-la-Aguada-Rivas-1071-San-Miguel-180-Deptos.-700x714_c (1).jpg"
+                  class="card-img-top"
+                  alt="Imagen Card 1"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Card 1</h5>
+                  <p class="card-text">Text for card 1.</p>
+                  <!-- Button trigger modal -->
+                  <button
+                    type="button"
+                    class="btn btn-primary"
+                    data-bs-toggle="modal"
+                    data-bs-target="#modal1"
+                  >
+                    Desplegar
+                  </button>
+
+                  <!-- Modal -->
+                  <div
+                    class="modal fade"
+                    id="modal1"
+                    tabindex="-1"
+                    aria-labelledby="modalLabel1"
+                    aria-hidden="true"
+                  >
+                    <div class="modal-dialog custom-size modal-dialog-centered">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <button
+                            type="button"
+                            class="btn-close"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"
+                          ></button>
+                        </div>
+                        <div class="row g-0">
+                          <div class="col-md-4">
+                            <div class="ratio ratio-16x9">
+                              <img
+                                src="./assets/images/Parque-la-Aguada-Rivas-1071-San-Miguel-180-Deptos.-700x714_c (1).jpg"
+                                class="img-fluid rounded-start"
+                                alt="Imagen Proyecto 1"
+                              />
+                            </div>
+                          </div>
+                          <div class="col-md-8">
+                            <div class="card-body">
+                              <h5 class="card-title">Título Proyecto 1</h5>
+                              <p class="card-text">
+                                This is a wider card with supporting text below
+                                as a natural lead-in to additional content. This
+                                content is a little bit longer.
+                              </p>
+                              <p class="card-text">
+                                <small class="text-body-secondary"
+                                  >Last updated 3 mins ago</small
+                                >
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                     </div>
+                  </div>
+                  <!-- /Modal -->
                 </div>
+              </div>
             </div>
-        </footer>
-        <!-- Bootstrap core JS-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
-        <!--Bootstrap Loader JS-->
-      <script>
-         window.addEventListener('load', function () {
+
+            <!-- Card 2 -->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+              <div class="card">
+                <img src="..." class="card-img-top" alt="Imagen Card 2" />
+                <div class="card-body">
+                  <h5 class="card-title">Card 2</h5>
+                  <p class="card-text">Text for card 2.</p>
+                  <!-- Button trigger modal -->
+                  <button
+                    type="button"
+                    class="btn btn-primary"
+                    data-bs-toggle="modal"
+                    data-bs-target="#modal2"
+                  >
+                    Desplegar
+                  </button>
+
+                  <!-- Modal -->
+                  <div
+                    class="modal fade"
+                    id="modal2"
+                    tabindex="-1"
+                    aria-labelledby="modalLabel2"
+                    aria-hidden="true"
+                  >
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h1 class="modal-title fs-5" id="modalLabel2">
+                            Título Proyecto 2
+                          </h1>
+                          <button
+                            type="button"
+                            class="btn-close"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"
+                          ></button>
+                        </div>
+                        <div class="row g-0">
+                          <div class="col-md-4">
+                            <img
+                              src="..."
+                              class="img-fluid rounded-start"
+                              alt="Imagen Proyecto 2"
+                            />
+                          </div>
+                          <div class="col-md-8">
+                            <div class="card-body">
+                              <h5 class="card-title">Título Proyecto 2</h5>
+                              <p class="card-text">
+                                This is a wider card with supporting text below
+                                as a natural lead-in to additional content. This
+                                content is a little bit longer.
+                              </p>
+                              <p class="card-text">
+                                <small class="text-body-secondary"
+                                  >Last updated 5 mins ago</small
+                                >
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- /Modal -->
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+              <div class="card">
+                <img src="..." class="card-img-top" alt="Imagen Card 3" />
+                <div class="card-body">
+                  <h5 class="card-title">Card 3</h5>
+                  <p class="card-text">Text for card 3.</p>
+                  <button
+                    type="button"
+                    class="btn btn-primary"
+                    data-bs-toggle="modal"
+                    data-bs-target="#modal3"
+                  >
+                    Desplegar
+                  </button>
+
+                  <div
+                    class="modal fade"
+                    id="modal3"
+                    tabindex="-1"
+                    aria-labelledby="modalLabel3"
+                    aria-hidden="true"
+                  >
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h1 class="modal-title fs-5" id="modalLabel3">
+                            Título Proyecto 3
+                          </h1>
+                          <button
+                            type="button"
+                            class="btn-close"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"
+                          ></button>
+                        </div>
+                        <div class="row g-0">
+                          <div class="col-md-4">
+                            <img
+                              src="..."
+                              class="img-fluid rounded-start"
+                              alt="Imagen Proyecto 3"
+                            />
+                          </div>
+                          <div class="col-md-8">
+                            <div class="card-body">
+                              <h5 class="card-title">Título Proyecto 3</h5>
+                              <p class="card-text">
+                                Descripción detallada del proyecto número 3.
+                              </p>
+                              <p class="card-text">
+                                <small class="text-body-secondary"
+                                  >Last updated 3 mins ago</small
+                                >
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+              <div class="card">
+                <img src="..." class="card-img-top" alt="Imagen Card 4" />
+                <div class="card-body">
+                  <h5 class="card-title">Card 4</h5>
+                  <p class="card-text">Text for card 4.</p>
+                  <button
+                    type="button"
+                    class="btn btn-primary"
+                    data-bs-toggle="modal"
+                    data-bs-target="#modal4"
+                  >
+                    Desplegar
+                  </button>
+
+                  <div
+                    class="modal fade"
+                    id="modal4"
+                    tabindex="-1"
+                    aria-labelledby="modalLabel4"
+                    aria-hidden="true"
+                  >
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h1 class="modal-title fs-5" id="modalLabel4">
+                            Título Proyecto 4
+                          </h1>
+                          <button
+                            type="button"
+                            class="btn-close"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"
+                          ></button>
+                        </div>
+                        <div class="row g-0">
+                          <div class="col-md-4">
+                            <img
+                              src="..."
+                              class="img-fluid rounded-start"
+                              alt="Imagen Proyecto 4"
+                            />
+                          </div>
+                          <div class="col-md-8">
+                            <div class="card-body">
+                              <h5 class="card-title">Título Proyecto 4</h5>
+                              <p class="card-text">
+                                Descripción detallada del proyecto número 4.
+                              </p>
+                              <p class="card-text">
+                                <small class="text-body-secondary"
+                                  >Last updated 4 mins ago</small
+                                >
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+              <div class="card">
+                <img src="..." class="card-img-top" alt="Imagen Card 5" />
+                <div class="card-body">
+                  <h5 class="card-title">Card 5</h5>
+                  <p class="card-text">Text for card 5.</p>
+                  <button
+                    type="button"
+                    class="btn btn-primary"
+                    data-bs-toggle="modal"
+                    data-bs-target="#modal5"
+                  >
+                    Desplegar
+                  </button>
+
+                  <div
+                    class="modal fade"
+                    id="modal5"
+                    tabindex="-1"
+                    aria-labelledby="modalLabel5"
+                    aria-hidden="true"
+                  >
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h1 class="modal-title fs-5" id="modalLabel5">
+                            Título Proyecto 5
+                          </h1>
+                          <button
+                            type="button"
+                            class="btn-close"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"
+                          ></button>
+                        </div>
+                        <div class="row g-0">
+                          <div class="col-md-4">
+                            <img
+                              src="..."
+                              class="img-fluid rounded-start"
+                              alt="Imagen Proyecto 5"
+                            />
+                          </div>
+                          <div class="col-md-8">
+                            <div class="card-body">
+                              <h5 class="card-title">Título Proyecto 5</h5>
+                              <p class="card-text">
+                                Descripción detallada del proyecto número 5.
+                              </p>
+                              <p class="card-text">
+                                <small class="text-body-secondary"
+                                  >Last updated 5 mins ago</small
+                                >
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 6 -->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+              <div class="card">
+                <img src="..." class="card-img-top" alt="Imagen Card 6" />
+                <div class="card-body">
+                  <h5 class="card-title">Card 6</h5>
+                  <p class="card-text">Text for card 6.</p>
+                  <button
+                    type="button"
+                    class="btn btn-primary"
+                    data-bs-toggle="modal"
+                    data-bs-target="#modal6"
+                  >
+                    Desplegar
+                  </button>
+
+                  <div
+                    class="modal fade"
+                    id="modal6"
+                    tabindex="-1"
+                    aria-labelledby="modalLabel6"
+                    aria-hidden="true"
+                  >
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h1 class="modal-title fs-5" id="modalLabel6">
+                            Título Proyecto 6
+                          </h1>
+                          <button
+                            type="button"
+                            class="btn-close"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"
+                          ></button>
+                        </div>
+                        <div class="row g-0">
+                          <div class="col-md-4">
+                            <img
+                              src="..."
+                              class="img-fluid rounded-start"
+                              alt="Imagen Proyecto 6"
+                            />
+                          </div>
+                          <div class="col-md-8">
+                            <div class="card-body">
+                              <h5 class="card-title">Título Proyecto 6</h5>
+                              <p class="card-text">
+                                Descripción detallada del proyecto número 6.
+                              </p>
+                              <p class="card-text">
+                                <small class="text-body-secondary"
+                                  >Last updated 6 mins ago</small
+                                >
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 7 -->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+              <div class="card">
+                <img src="..." class="card-img-top" alt="Imagen Card 7" />
+                <div class="card-body">
+                  <h5 class="card-title">Card 7</h5>
+                  <p class="card-text">Text for card 7.</p>
+                  <button
+                    type="button"
+                    class="btn btn-primary"
+                    data-bs-toggle="modal"
+                    data-bs-target="#modal7"
+                  >
+                    Desplegar
+                  </button>
+
+                  <div
+                    class="modal fade"
+                    id="modal7"
+                    tabindex="-1"
+                    aria-labelledby="modalLabel7"
+                    aria-hidden="true"
+                  >
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h1 class="modal-title fs-5" id="modalLabel7">
+                            Título Proyecto 7
+                          </h1>
+                          <button
+                            type="button"
+                            class="btn-close"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"
+                          ></button>
+                        </div>
+                        <div class="row g-0">
+                          <div class="col-md-4">
+                            <img
+                              src="..."
+                              class="img-fluid rounded-start"
+                              alt="Imagen Proyecto 7"
+                            />
+                          </div>
+                          <div class="col-md-8">
+                            <div class="card-body">
+                              <h5 class="card-title">Título Proyecto 7</h5>
+                              <p class="card-text">
+                                Descripción detallada del proyecto número 7.
+                              </p>
+                              <p class="card-text">
+                                <small class="text-body-secondary"
+                                  >Last updated 7 mins ago</small
+                                >
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 8 -->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+              <div class="card">
+                <img src="..." class="card-img-top" alt="Imagen Card 8" />
+                <div class="card-body">
+                  <h5 class="card-title">Card 8</h5>
+                  <p class="card-text">Text for card 8.</p>
+                  <button
+                    type="button"
+                    class="btn btn-primary"
+                    data-bs-toggle="modal"
+                    data-bs-target="#modal8"
+                  >
+                    Desplegar
+                  </button>
+
+                  <div
+                    class="modal fade"
+                    id="modal8"
+                    tabindex="-1"
+                    aria-labelledby="modalLabel8"
+                    aria-hidden="true"
+                  >
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h1 class="modal-title fs-5" id="modalLabel8">
+                            Título Proyecto 8
+                          </h1>
+                          <button
+                            type="button"
+                            class="btn-close"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"
+                          ></button>
+                        </div>
+                        <div class="row g-0">
+                          <div class="col-md-4">
+                            <img
+                              src="..."
+                              class="img-fluid rounded-start"
+                              alt="Imagen Proyecto 8"
+                            />
+                          </div>
+                          <div class="col-md-8">
+                            <div class="card-body">
+                              <h5 class="card-title">Título Proyecto 8</h5>
+                              <p class="card-text">
+                                Descripción detallada del proyecto número 8.
+                              </p>
+                              <p class="card-text">
+                                <small class="text-body-secondary"
+                                  >Last updated 8 mins ago</small
+                                >
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 9 -->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+              <div class="card">
+                <img src="..." class="card-img-top" alt="Imagen Card 9" />
+                <div class="card-body">
+                  <h5 class="card-title">Card 9</h5>
+                  <p class="card-text">Text for card 9.</p>
+                  <button
+                    type="button"
+                    class="btn btn-primary"
+                    data-bs-toggle="modal"
+                    data-bs-target="#modal9"
+                  >
+                    Desplegar
+                  </button>
+
+                  <div
+                    class="modal fade"
+                    id="modal9"
+                    tabindex="-1"
+                    aria-labelledby="modalLabel9"
+                    aria-hidden="true"
+                  >
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h1 class="modal-title fs-5" id="modalLabel9">
+                            Título Proyecto 9
+                          </h1>
+                          <button
+                            type="button"
+                            class="btn-close"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"
+                          ></button>
+                        </div>
+                        <div class="row g-0">
+                          <div class="col-md-4">
+                            <img
+                              src="..."
+                              class="img-fluid rounded-start"
+                              alt="Imagen Proyecto 9"
+                            />
+                          </div>
+                          <div class="col-md-8">
+                            <div class="card-body">
+                              <h5 class="card-title">Título Proyecto 9</h5>
+                              <p class="card-text">
+                                Descripción detallada del proyecto número 9.
+                              </p>
+                              <p class="card-text">
+                                <small class="text-body-secondary"
+                                  >Last updated 9 mins ago</small
+                                >
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 10 -->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+              <div class="card">
+                <img src="..." class="card-img-top" alt="Imagen Card 10" />
+                <div class="card-body">
+                  <h5 class="card-title">Card 10</h5>
+                  <p class="card-text">Text for card 10.</p>
+                  <button
+                    type="button"
+                    class="btn btn-primary"
+                    data-bs-toggle="modal"
+                    data-bs-target="#modal10"
+                  >
+                    Desplegar
+                  </button>
+
+                  <div
+                    class="modal fade"
+                    id="modal10"
+                    tabindex="-1"
+                    aria-labelledby="modalLabel10"
+                    aria-hidden="true"
+                  >
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h1 class="modal-title fs-5" id="modalLabel10">
+                            Título Proyecto 10
+                          </h1>
+                          <button
+                            type="button"
+                            class="btn-close"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"
+                          ></button>
+                        </div>
+                        <div class="row g-0">
+                          <div class="col-md-4">
+                            <img
+                              src="..."
+                              class="img-fluid rounded-start"
+                              alt="Imagen Proyecto 10"
+                            />
+                          </div>
+                          <div class="col-md-8">
+                            <div class="card-body">
+                              <h5 class="card-title">Título Proyecto 10</h5>
+                              <p class="card-text">
+                                Descripción detallada del proyecto número 10.
+                              </p>
+                              <p class="card-text">
+                                <small class="text-body-secondary"
+                                  >Last updated 10 mins ago</small
+                                >
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Más tarjetas con modal aquí si deseas -->
+          </div>
+
+          <!-- Paginación -->
+          <nav aria-label="Page navigation example">
+            <ul class="pagination justify-content-center" id="pagination">
+              <!-- Se generarán dinámicamente -->
+            </ul>
+          </nav>
+        </div>
+        <!-- cierre container mt-4 -->
+      </div>
+      <!-- cierre container px-5 mb-5 -->
+    </section>
+    <!-- cierre sección proyectos -->
+
+    <!-- Call to action section-->
+    <section class="py-5 bg-gradient-primary-to-secondary text-white">
+      <div class="container px-5 my-5">
+        <div class="text-center">
+          <h2 class="display-4 fw-bolder mb-4">¡Colaboremos Juntos!</h2>
+          <a
+            class="btn btn-outline-light btn-lg px-5 py-3 fs-6 fw-bolder"
+            href="contact.html"
+            >Contáctanos</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer-->
+    <footer class="bg-white py-4 mt-auto">
+      <div class="container">
+        <div class="row align-items-start justify-content-between">
+          <div class="col d-flex flex-column">
+            <h4>Ubicación</h4>
+            <p>#####</p>
+            <p>##########</p>
+            <h4>Contactos</h4>
+            <p>Email</p>
+            <p>Teléfono</p>
+          </div>
+          <div class="col-12 col-md-auto text-md-end">
+            <h4>Enlaces</h4>
+            <ol class="list-unstyled">
+              <li>
+                <a
+                  href="index.html"
+                  target="_blank"
+                  class="text-dark text-decoration-none"
+                  >Inicio</a
+                >
+              </li>
+              <li>
+                <a
+                  href="us.html"
+                  target="_blank"
+                  class="text-dark text-decoration-none"
+                  >Nosotros</a
+                >
+              </li>
+              <li>
+                <a href="service.html" class="text-dark text-decoration-none"
+                  >Servicios</a
+                >
+              </li>
+              <li>
+                <a
+                  href="projects.html"
+                  target="_blank"
+                  class="text-dark text-decoration-none"
+                  >Proyectos</a
+                >
+              </li>
+              <li>
+                <a
+                  href="contact.html"
+                  target="_blank"
+                  class="text-dark text-decoration-none"
+                  >Contacto</a
+                >
+              </li>
+              <li>
+                <a
+                  href="blog.html"
+                  target="_blank"
+                  class="text-dark text-decoration-none"
+                  >Blog</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://dgcelectricidad.cl:2083/"
+                  target="_blank"
+                  class="text-dark text-decoration-none"
+                  >Ingresar</a
+                >
+              </li>
+            </ol>
+          </div>
+        </div>
+
+        <!-- Parte inferior -->
+        <div
+          class="row align-items-center justify-content-between flex-column flex-sm-row mt-4 px-5"
+        >
+          <div class="col-auto">
+            <div class="small m-0">Copyright &copy; DGC Electrica 2025</div>
+          </div>
+          <div class="col-auto">
+            <a class="small" href="#!">Privacidad</a>
+            <span class="mx-1">&middot;</span>
+            <a class="small" href="#!">Términos</a>
+            <span class="mx-1">&middot;</span>
+            <a class="small" href="./contact.html">Contacto</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
+    <!--Bootstrap Loader JS-->
+    <script>
+      window.addEventListener("load", function () {
         setTimeout(function () {
-        // Oculta el loader suavemente
-        const loader = document.getElementById('loader');
-        const contenido = document.getElementById('contenido');
-        document.body.classList.remove('loading');
-        loader.classList.add('hidden'); // aplica fade out
-        // Muestra el contenido después de que el fade out del loader termina (1s)
-        setTimeout(() => {
-        contenido.classList.add('visible'); // aplica fade in
-        }, 1000); // 1000ms = duración del fade out del loader
-      }, 4000); // espera 10 segundos antes de ocultar el loader
-    });
-  </script>
-  <!--JS cartas-->
-  <script>
-  const cards = document.querySelectorAll('.card');
-  const pagination = document.getElementById('pagination');
-  const cardsPerPage = 12;
-  const totalPages = Math.ceil(cards.length / cardsPerPage);
-
-  let currentPage = 1;
-
-  function showPage(page) {
-    // Oculta todas las cards
-    cards.forEach(card => card.style.display = 'none');
-
-    // Calcula cuáles mostrar
-    const start = (page - 1) * cardsPerPage;
-    const end = start + cardsPerPage;
-
-    for (let i = start; i < end && i < cards.length; i++) {
-      cards[i].style.display = 'block';
-    }
-
-    // Actualiza clases activas en paginación
-    const pageLinks = document.querySelectorAll('.page-link');
-    pageLinks.forEach(link => link.parentElement.classList.remove('active'));
-    if (pageLinks[page]) {
-      pageLinks[page].parentElement.classList.add('active');
-    }
-  }
-
-  function createPagination() {
-    // Botón anterior
-    const prev = document.createElement('li');
-    prev.className = 'page-item';
-    prev.innerHTML = `<a class="page-link" href="#">&laquo;</a>`;
-    prev.addEventListener('click', () => {
-      if (currentPage > 1) {
-        currentPage--;
-        showPage(currentPage);
-      }
-    });
-    pagination.appendChild(prev);
-
-    // Números de página
-    for (let i = 1; i <= totalPages; i++) {
-      const li = document.createElement('li');
-      li.className = 'page-item' + (i === 1 ? ' active' : '');
-      li.innerHTML = `<a class="page-link" href="#">${i}</a>`;
-      li.addEventListener('click', () => {
-        currentPage = i;
-        showPage(currentPage);
+          // Oculta el loader suavemente
+          const loader = document.getElementById("loader");
+          const contenido = document.getElementById("contenido");
+          document.body.classList.remove("loading");
+          loader.classList.add("hidden"); // aplica fade out
+          // Muestra el contenido después de que el fade out del loader termina (1s)
+          setTimeout(() => {
+            contenido.classList.add("visible"); // aplica fade in
+          }, 1000); // 1000ms = duración del fade out del loader
+        }, 4000); // espera 10 segundos antes de ocultar el loader
       });
-      pagination.appendChild(li);
-    }
+    </script>
+    <!--JS cartas-->
+    <script>
+      const cards = document.querySelectorAll(".card");
+      const pagination = document.getElementById("pagination");
+      const cardsPerPage = 12;
+      const totalPages = Math.ceil(cards.length / cardsPerPage);
 
-    // Botón siguiente
-    const next = document.createElement('li');
-    next.className = 'page-item';
-    next.innerHTML = `<a class="page-link" href="#">&raquo;</a>`;
-    next.addEventListener('click', () => {
-      if (currentPage < totalPages) {
-        currentPage++;
-        showPage(currentPage);
+      let currentPage = 1;
+
+      function showPage(page) {
+        // Oculta todas las cards
+        cards.forEach((card) => (card.style.display = "none"));
+
+        // Calcula cuáles mostrar
+        const start = (page - 1) * cardsPerPage;
+        const end = start + cardsPerPage;
+
+        for (let i = start; i < end && i < cards.length; i++) {
+          cards[i].style.display = "block";
+        }
+
+        // Actualiza clases activas en paginación
+        const pageLinks = document.querySelectorAll(".page-link");
+        pageLinks.forEach((link) =>
+          link.parentElement.classList.remove("active")
+        );
+        if (pageLinks[page]) {
+          pageLinks[page].parentElement.classList.add("active");
+        }
       }
-    });
-    pagination.appendChild(next);
-  }
 
-  createPagination();
-  showPage(currentPage);
-</script>
-    </body>
+      function createPagination() {
+        // Botón anterior
+        const prev = document.createElement("li");
+        prev.className = "page-item";
+        prev.innerHTML = `<a class="page-link" href="#">&laquo;</a>`;
+        prev.addEventListener("click", () => {
+          if (currentPage > 1) {
+            currentPage--;
+            showPage(currentPage);
+          }
+        });
+        pagination.appendChild(prev);
+
+        // Números de página
+        for (let i = 1; i <= totalPages; i++) {
+          const li = document.createElement("li");
+          li.className = "page-item" + (i === 1 ? " active" : "");
+          li.innerHTML = `<a class="page-link" href="#">${i}</a>`;
+          li.addEventListener("click", () => {
+            currentPage = i;
+            showPage(currentPage);
+          });
+          pagination.appendChild(li);
+        }
+
+        // Botón siguiente
+        const next = document.createElement("li");
+        next.className = "page-item";
+        next.innerHTML = `<a class="page-link" href="#">&raquo;</a>`;
+        next.addEventListener("click", () => {
+          if (currentPage < totalPages) {
+            currentPage++;
+            showPage(currentPage);
+          }
+        });
+        pagination.appendChild(next);
+      }
+
+      createPagination();
+      showPage(currentPage);
+    </script>
+  </body>
 </html>
