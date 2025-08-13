@@ -4345,12 +4345,6 @@ textarea.form-control-lg {
   hyphens: auto;
 }
 
-@media (max-width: 768px) {
-  .card-body {
-    padding-left: 0 !important;
-  }
-}
-
 .card-text:last-child {
   margin-bottom: 0;
 }
