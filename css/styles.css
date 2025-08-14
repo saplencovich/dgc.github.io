@@ -5960,10 +5960,12 @@ textarea.form-control-lg {
   transition: transform 0.6s ease-in-out;
 }
 
-.carousel-item img {
-  max-width: none !important; /* La imagen se ajusta al ancho del contenedor */
-  height: auto; /* Mantiene la proporción de la imagen */
-  object-fit: cover; /* Asegura que la imagen cubra completamente el área sin deformarse */
+.carousel-inner {
+  width: 100%;
+  max-width: 500px;      /* Ajusta este valor para que coincida con tu "cuadro naranja" */
+  margin: 0 auto;         /* Centra el carrusel horizontalmente */
+  overflow: hidden;
+  padding: 0 15px;        /* Evita que quede pegado en pantallas chicas */
 }
 
 @media (prefers-reduced-motion: reduce) {
