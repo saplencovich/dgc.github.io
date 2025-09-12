@@ -5955,7 +5955,7 @@ textarea.form-control-lg {
 
 .carousel-item img {
   max-width: none !important; /* La imagen se ajusta al ancho del contenedor */
-  height: auto; /* Mantiene la proporción de la imagen */
+  height: 650px; /* Mantiene la proporción de la imagen */
   object-fit: cover; /* Asegura que la imagen cubra completamente el área sin deformarse */
 }
 
