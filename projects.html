@@ -89,25 +89,26 @@
     <section class="py-5">
       <div class="container px-5 mb-5">
         <div class="text-center mb-5">
-          <h1 class="display-5 fw-bolder mb-0">
+          <h1 class="text-gradient-k display-5 fw-bolder mb-0">
             <span class="text-gradient d-inline">Proyectos</span>
           </h1>
         </div>
 
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
           <div class="nav-project container-fluid">
-            <form class="d-flex" role="search">
+            <form class="d-flex" role="search" onsubmit="return false;">
               <input
+                id="filtro"
                 class="form-control me-2"
                 type="search"
                 placeholder="Buscar"
                 aria-label="Search"
               />
-              <button class="btn btn-outline-success" type="submit">
+              <button class="btn btn-outline-success" type="button">
                 Buscar
               </button>
             </form>
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0 fw-bolder">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fw-bolder">
               <li class="nav-item">
                 <a class="nav-link" href="#">Ver todos</a>
               </li>
@@ -120,7 +121,7 @@
 
         <!-- Proyectos -->
         <div class="container mt-4">
-          <div class="row">
+          <div class="row" id="lista">
             <!-- Card 1 -->
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
               <div class="card">
@@ -142,7 +143,7 @@
                     Desplegar
                   </button>
 
-                  <!-- Modal -->
+                  <!-- Card 1 -->
                   <div
                     class="modal fade"
                     id="modal1"
@@ -189,7 +190,6 @@
                       </div>
                     </div>
                   </div>
-                  <!-- /Modal -->
                 </div>
               </div>
             </div>
@@ -995,6 +995,30 @@
 
       createPagination();
       showPage(currentPage);
+    </script>
+    <script>
+      const inputFiltro = document.getElementById("filtro");
+      const items = document.querySelectorAll("#lista .col-12");
+
+      inputFiltro.addEventListener("keyup", () => {
+        let texto = inputFiltro.value.toLowerCase();
+
+        items.forEach((item) => {
+          let titulo = item
+            .querySelector(".card-title")
+            .textContent.toLowerCase();
+          let descripcion = item
+            .querySelector(".card-text")
+            .textContent.toLowerCase();
+
+          // mostrar si coincide en título o texto
+          if (titulo.includes(texto) || descripcion.includes(texto)) {
+            item.style.display = "";
+          } else {
+            item.style.display = "none";
+          }
+        });
+      });
     </script>
   </body>
 </html>
